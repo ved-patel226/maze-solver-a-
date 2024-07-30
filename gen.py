@@ -63,8 +63,11 @@ def surroundingCells(rand_wall, maze, height, width):
 wall = "w"
 cell = "c"
 unvisited = "u"
-height = 1001
-width = 2001
+height = 25
+width = 25
+
+assert height % 2 == 1 and width % 2 == 1, "Height and width must be odd numbers"
+
 maze = []
 
 entrance = "s"
